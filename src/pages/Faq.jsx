@@ -9,11 +9,11 @@ const FAQS = [
   },
   {
     q: 'How much does it cost to mint?',
-    a: 'Each unit mints for 0.08 ETH, plus gas. You can mint up to 10 units per transaction.',
+    a: 'Each unit mints for 1.5 SOL, plus network fees. You can mint up to 10 units per transaction.',
   },
   {
     q: 'What blockchain is VOID on?',
-    a: 'VOID is deployed on Ethereum. You will need a browser wallet such as MetaMask to connect and mint.',
+    a: 'VOID is deployed on Solana using the Metaplex token standard. You will need a Solana wallet such as Phantom to connect and mint.',
   },
   {
     q: 'Do I need a wallet to browse the site?',

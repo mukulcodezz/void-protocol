@@ -2,14 +2,14 @@ import { useEffect, useRef, useState } from 'react'
 import { useOutletContext } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
 import ArtPiece from '../components/ArtPiece'
-import { PRICE_ETH, TOTAL_SUPPLY } from '../constants'
+import { PRICE_SOL, TOTAL_SUPPLY } from '../constants'
 import { useDocumentMeta } from '../hooks/useDocumentMeta'
 import objectArt from '../assets/art/grid-4.png'
 
 export default function Mint() {
   useDocumentMeta(
-    'Mint VOID — 0.08 ETH per unit',
-    `Mint a VOID unit for ${PRICE_ETH} ETH. ${TOTAL_SUPPLY.toLocaleString()} sequential units total, connect your wallet to begin.`
+    `Mint VOID — ${PRICE_SOL} SOL per unit`,
+    `Mint a VOID unit for ${PRICE_SOL} SOL. ${TOTAL_SUPPLY.toLocaleString()} sequential units total, connect your Solana wallet to begin.`
   )
   const wallet = useOutletContext()
   const [quantity, setQuantity] = useState(1)
@@ -71,9 +71,9 @@ export default function Mint() {
         </header>
         <div className="space-y-4 relative z-10">
           <section>
-            <label className="font-mono text-label-mono-sm text-outline block mb-2">// CONTRACT_ADDR</label>
+            <label className="font-mono text-label-mono-sm text-outline block mb-2">// PROGRAM_ID</label>
             <div className="bg-surface-container border border-primary p-3 font-mono text-[10px] break-all">
-              0xVOID_PENDING_DEPLOYMENT
+              VoidPr0gramPENDING1111111111111111111111
             </div>
           </section>
           <section>
@@ -85,7 +85,7 @@ export default function Mint() {
           <section>
             <label className="font-mono text-label-mono-sm text-outline block mb-2">// ESTIMATED_COST</label>
             <div className="text-primary font-mono text-lg tabular-nums">
-              {(quantity * PRICE_ETH).toFixed(2)} ETH
+              {(quantity * PRICE_SOL).toFixed(2)} SOL
             </div>
           </section>
           <section className="border-t border-primary pt-4">
@@ -131,7 +131,7 @@ export default function Mint() {
                   </div>
                   <div className="flex justify-between items-end border-b border-primary pb-2">
                     <span className="font-mono text-label-mono-sm text-outline">PRICE</span>
-                    <span className="font-mono text-primary">{PRICE_ETH} ETH</span>
+                    <span className="font-mono text-primary">{PRICE_SOL} SOL</span>
                   </div>
                 </div>
               </div>

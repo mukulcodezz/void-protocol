@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import ArtPiece from '../components/ArtPiece'
-import { PRICE_ETH, TOTAL_SUPPLY } from '../constants'
+import { PRICE_SOL, TOTAL_SUPPLY } from '../constants'
 import { useDocumentMeta } from '../hooks/useDocumentMeta'
 import heroArt from '../assets/art/hero.png'
 import grid1 from '../assets/art/grid-1.png'
@@ -34,9 +34,9 @@ const GRID_ITEMS = GRID_IMAGES.map((src, i) => ({
 
 const STATS = [
   { value: '10K', label: 'Supply' },
-  { value: `${PRICE_ETH}`, label: 'ETH Price' },
+  { value: `${PRICE_SOL}`, label: 'SOL Price' },
   { value: '01', label: 'Phase' },
-  { value: 'ERC-721', label: 'Standard' },
+  { value: 'METAPLEX', label: 'Standard' },
 ]
 
 const heroContainer = {
@@ -80,7 +80,7 @@ export default function Home() {
           <div className="hidden md:block absolute top-8 right-8 font-mono text-label-mono-sm text-outline text-right">
             COLLECTION_SIZE // {TOTAL_SUPPLY.toLocaleString()} UNITS
             <br />
-            STANDARD // ERC-721
+            STANDARD // METAPLEX
           </div>
           <motion.h1
             variants={heroItem}

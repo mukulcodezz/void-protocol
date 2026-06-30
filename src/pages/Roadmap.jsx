@@ -14,9 +14,9 @@ const PHASES = [
     art: heroArt,
     artName: 'genesis unit',
     summary:
-      'The bedrock of the VOID protocol — initial smart contract infrastructure, oracle integration, and the closed TERMINAL beta for core contributors.',
+      'The bedrock of the VOID protocol — initial program deployment on Solana, oracle integration, and the closed TERMINAL beta for core contributors.',
     items: [
-      'Deployment of initial smart contract infrastructure on Layer 1.',
+      'Deployment of initial Solana program infrastructure.',
       'VOID protocol integration with decentralized oracle networks.',
       'Launch of the TERMINAL beta for core contributors.',
     ],
@@ -31,7 +31,7 @@ const PHASES = [
       'Full public mint opens. All 10,000 sequential units become available, followed by secondary marketplace listings and holder-only access.',
     items: [
       'Full public mint of all 10,000 sequential units.',
-      'Secondary marketplace listings (OpenSea, Blur).',
+      'Secondary marketplace listings (Magic Eden, Tensor).',
       'Holder-only Discord channel unlock.',
     ],
   },

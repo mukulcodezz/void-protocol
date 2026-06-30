@@ -8,7 +8,7 @@ Monochrome generative NFT collection site — 10,000 units, strict black & white
 - React Router (client-side routing)
 - Tailwind CSS
 - Framer Motion (page transitions, scroll reveals, micro-interactions)
-- Browser wallet connect (`window.ethereum`, no backend)
+- Solana wallet connect (`window.solana` / Phantom, no backend)
 
 ## Pages
 
@@ -42,4 +42,4 @@ See `src/assets/art/STRUCTURAL-SILENCE.md` for the visual design philosophy behi
 ## Notes
 
 - This is a client-rendered SPA. Per-route `<title>`/meta tags update at runtime (`src/hooks/useDocumentMeta.js`), which Google indexes fine via JS rendering, but non-JS social-card unfurlers will only see the homepage's static OG tags. Add prerendering if per-route social cards matter later.
-- No smart contract is deployed yet — `/mint` is a UI simulation. Wallet connect is real (`window.ethereum`); the mint transaction itself is not.
+- No program is deployed yet — `/mint` is a UI simulation. Wallet connect is real (`window.solana`); the mint transaction itself is not.
